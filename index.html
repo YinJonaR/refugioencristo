@@ -1,0 +1,98 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refugio en Cristo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="barra-superior">
+    <div class="contenedor barra-contenido">
+      <div class="logo">Refugio en Cristo</div>
+
+      <nav class="menu">
+        <a href="#bienvenida">Bienvenida</a>
+        <a href="#peticion">Oración</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="contenedor hero-contenido">
+      <p class="etiqueta">Ten fe, no prisa</p>
+      <h1>La gracia nos viste mejor que el miedo. Cree y verás su gloria.</h1>
+      <p class="subtexto">
+        Tan pronto como Pedro quitó los ojos de Jesús, comenzó a hundirse. Las olas no te ahogan; perder de vista a Jesús sí.
+      </p>
+
+      <div class="hero-botones">
+        <button type="button" class="boton boton-principal" id="btnMensajes">
+        Ver mensajes
+        </button>
+        <a href="#peticion" class="boton boton-secundario">Pedir oración</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="contenedor principal">
+
+    <section id="bienvenida" class="intro fade-in">
+      <div class="intro-texto">
+        <p class="seccion-etiqueta">Bienvenida</p>
+        <h2>Gracias por visitar este espacio</h2>
+        <p>
+           Hay momentos en los que el corazón se cansa, la mente se llena de preguntas y todo parece incierto. Aun así, Dios permanece cerca.
+           
+        </p>
+      </div>
+    </section>
+
+
+
+    <section id="peticion" class="seccion-oracion fade-in">
+      <div class="oracion-info">
+        <p class="seccion-etiqueta">Petición de oración</p>
+        <h2>Déjanos orar por tí</h2>
+        <p>
+          La oración es la vía de comunicación directa con nuestro padre y nos encantaría acompañarte en tu proceso. Creemos en el poder de la oración y en lo eficáz y transformadora que es cuando nos unimos. Puedes escribir tu petición aquí.
+        </p>
+        <blockquote>
+          “La oración eficaz del justo puede mucho.” — Santiago 5:16
+        </blockquote>
+      </div>
+
+      <form id="formOracion" class="formulario">
+        <div class="grupo-campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+        </div>
+
+        <div class="grupo-campo">
+          <label for="motivo">Motivo de oración</label>
+          <textarea id="motivo" name="motivo" rows="6" placeholder="Escribe aquí tu petición de oración" required></textarea>
+        </div>
+
+        <button type="submit" class="boton-enviar">Enviar petición</button>
+        <p id="mensajeExito" class="mensaje-exito"></p>
+      </form>
+    </section>
+
+  </main>
+
+<footer class="pie">
+  <div class="contenedor pie-contenido">
+    <h3>Refugio en Cristo</h3>
+    <p class="footer-versiculo">Que tu fe sea más grande que las dudas en tu mente. - Mateo 21:21</p>
+    <p class="footer-copy">© 2026 Refugio en Cristo. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
